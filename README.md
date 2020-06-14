@@ -33,6 +33,7 @@ Initial repository:
 ## Installation and Use
 
 Dont forget to:
+```php artisan key:generate```
 - Update package dependencies
 ```composer update```
 - Frontend Scaffolding

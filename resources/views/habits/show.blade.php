@@ -9,8 +9,12 @@
                     <h4>{{ $habit->description }}</h4>
                     <h6>{{ $habit->reason}}</h6>
                 </div>
-                <div class="col text-right">                    
-                    {{ $habit->firstRating->created_at->diffForHumans() }}
+                <div class="col text-right">
+                    @if(isset($habit->firstRating->created_at))                    
+                        {{ $habit->firstRating->created_at->diffForHumans() }}
+                    @else
+                        Not rated yet
+                    @endif
                 </div>
             </div>
             <div id="calendar"></div>

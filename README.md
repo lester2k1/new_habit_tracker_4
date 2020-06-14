@@ -23,13 +23,23 @@ The web application has the following pages and/or functionalities:
 - Habit List Page
 - Habit Calendar page
 
-## User Registration
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
 ## Credits
 - **[Josh Arkane Orbiso](https://github.com/orbijo)**
 - **[Lester John Doblas](https://github.com/lester2k1)**
 
 Initial repository:
 - [Pre-frontend repo](https://github.com/orbijo/new_habit_tracker_4/)
+
+## Installation and Use
+
+Dont forget to:
+- Update package dependencies
+```composer update```
+- Frontend Scaffolding
+```npm install && npm run dev```
+- Run Apache and  MySQL in XAMPP and create your database
+- ```cp .env.example .env``` and change the environment variables in your new .env file to your liking
+- Generate tables
+```php artisan migrate:fresh``` w/ seeders: ```php artisan migrate:fresh``` (seed users password: 'password')
+- Serve the application
+```php artisan serve```

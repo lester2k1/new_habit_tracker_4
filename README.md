@@ -28,7 +28,7 @@ The web application has the following pages and/or functionalities:
 - **[Lester John Doblas](https://github.com/lester2k1)**
 
 Initial repository:
-- [Pre-frontend repo](https://github.com/orbijo/new_habit_tracker_4/)
+- [Pre-inital-commit repo](https://github.com/orbijo/new_habit_tracker_4/)
 
 ## Installation and Use
 

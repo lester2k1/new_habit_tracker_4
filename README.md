@@ -28,8 +28,8 @@ The web application has the following pages and/or functionalities:
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 ## Credits
-- **[Josh Arkane Orbiso](github.com/orbijo)**
-- **[Lester John Doblas](github.com/lester2k1)**
+- **[Josh Arkane Orbiso](https://github.com/orbijo)**
+- **[Lester John Doblas](https://github.com/lester2k1)**
 
 Initial repository:
-- [Pre-frontend repo](github.com/orbijo/new_habit_tracker_4/)
+- [Pre-frontend repo](https://github.com/orbijo/new_habit_tracker_4/)

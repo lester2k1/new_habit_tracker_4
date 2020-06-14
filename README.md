@@ -1,8 +1,8 @@
 <p align="center"><img src="https://raw.githubusercontent.com/lester2k1/new_habit_tracker_4/master/public/img/logo2.png" width="400"></p>
 
-<h4 align="center">
+<h1 align="center">
 Trabbit
-</h4>
+</h1>
 
 ## About Laravel
 

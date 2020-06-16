@@ -43,7 +43,7 @@
                             <label for="bday" class="col-md-4 col-form-label text-md-right">{{ __('Birthday') }}</label>
 
                             <div class="col-md-6">
-                                <input id="bday" name="bday" type="date" class="form-control @error('bday') is-invalid @enderror">
+                            <input id="bday" name="bday" type="date" class="form-control @error('bday') is-invalid @enderror" value="{{old('bday')}}">
 
                                 @error('bday')
                                     <span class="invalid-feedback" role="alert">

@@ -74,7 +74,7 @@ class HabitController extends Controller
         $mehs = Rating::where('habit_id',$retval->id)->where('rating','meh')->count();
         $frowns = Rating::where('habit_id',$retval->id)->where('rating','frown')->count();
         if($response->allowed()){
-            return view('habits.show', ['habit' => $retval, compact('calendar'),'smiles'=>$smiles,'mehs'=>$mehs,'frowns'=>$frowns]);
+            return view('habits.show', ['habit' => $retval, 'smiles' => $smiles, 'mehs' => $mehs, 'frowns' => $frowns]);
         }
         else{
             abort(404);

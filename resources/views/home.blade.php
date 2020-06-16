@@ -20,16 +20,15 @@
                             <td>{{ $habit->description }}</td>
                             <td>{{ $habit->reason }}</td>
                                 @if(isset($habit->firstRating))
-                                <td>{{ $habit->firstRating->created_at->diffForHumans() }}</td>
-                                </tr>
+                                    <td>{{ $habit->firstRating->created_at->diffForHumans() }}</td>
                                 @else
-                                <td>Not rated yet</td>
-                                </tr>
+                                    <td>Not rated yet</td>
+                                    </tr>
                                 @endif
-                                
                             @empty
                                 <tr>
                                 <td>No Entries</td>
+                                <td></td>
                                 <td></td>
                             </tr>
                         @endforelse

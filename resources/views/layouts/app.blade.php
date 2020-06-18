@@ -62,6 +62,7 @@
             })
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: [ 'dayGrid' ],
+                nextDayThreshold: '01:00:00',
                 events: events,
                 eventRender: function (info) {
                     let icon = info.event.extendedProps.icon;

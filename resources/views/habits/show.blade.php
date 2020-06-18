@@ -11,7 +11,13 @@
                 </div>
                 <div class="col text-right">
                     @if(isset($habit->firstRating->created_at))                    
-                        {{ $habit->firstRating->created_at->diffForHumans() }}
+                        @if($habit->firstRating->created_at->diffInDays()==0)
+                            <td>Started {{ $habit->firstRating->created_at->diffForHumans() }}</td>
+                        @elseif($habit->firstRating->created_at->diffInDays()==1)
+                            <td>Started {{ $habit->firstRating->created_at->diffInDays() }} day ago</td>
+                        @else
+                            <td>Started {{ $habit->firstRating->created_at->diffInDays() }} days ago</td>
+                        @endif
                     @else
                         Not rated yet
                     @endif

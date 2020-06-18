@@ -20,7 +20,13 @@
                             <td>{{ $habit->description }}</td>
                             <td>{{ $habit->reason }}</td>
                                 @if(isset($habit->firstRating))
-                                    <td>{{ $habit->firstRating->created_at->diffForHumans() }}</td>
+                                    @if($habit->firstRating->created_at->diffInDays()==0)
+                                        <td>{{ $habit->firstRating->created_at->diffForHumans(null, true) }}</td>
+                                    @elseif($habit->firstRating->created_at->diffInDays()==1)
+                                        <td>{{ $habit->firstRating->created_at->diffInDays() }} day</td>
+                                    @else
+                                        <td>{{ $habit->firstRating->created_at->diffInDays() }} days</td>
+                                    @endif
                                 @else
                                     <td>Not rated yet</td>
                                     </tr>

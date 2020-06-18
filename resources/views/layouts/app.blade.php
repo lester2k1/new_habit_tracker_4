@@ -44,6 +44,7 @@
                 var newEvent = {
                     title : element.rating,
                     start : element.created_at,
+                    end : element.created_at,
                     icon: element.rating
                 }
                 events.push(newEvent)
